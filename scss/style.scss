@@ -145,6 +145,45 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        .game{
+            background-image: url(../image/videogame.jpg);
+        }
+
+        .movie{
+            background-image: url(../image/movie.jpg);
+        }
+
+        .series{
+            background-image: url(../image/series.jpg);
+        }
+
+        
+        .series,
+        .movie,
+        .game{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.432);
+            background-blend-mode: soft-light;
+            border-radius: 200px;
+            filter: grayscale(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        
+            p{
+                color: white;
+                font-size: 25px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
         img{
             height: 250px;
             width: auto;
