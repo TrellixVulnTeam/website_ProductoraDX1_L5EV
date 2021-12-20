@@ -108,7 +108,8 @@ footer {
       border-radius: 200px; }
     .contenido div p {
       text-align: center;
-      max-width: 300px; }
+      max-width: 300px;
+      font-size: 1.8vw; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   body {
@@ -145,4 +146,6 @@ footer {
     display: flex;
     flex-direction: column; }
     .contenido div {
-      flex-direction: row; } }
+      flex-direction: row; }
+      .contenido div p {
+        font-size: 2.5vw; } }

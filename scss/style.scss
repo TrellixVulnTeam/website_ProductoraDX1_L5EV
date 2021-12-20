@@ -146,6 +146,7 @@ footer {
         p{
             text-align: center;
             max-width: 300px;
+            font-size: 1.8vw;
         }
     }
 }
@@ -205,6 +206,10 @@ footer {
 
         div{
             flex-direction: row;
+
+            p{
+                font-size: 2.5vw;
+            }
         }
     }
 }
