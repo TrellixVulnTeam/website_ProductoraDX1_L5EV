@@ -21,12 +21,17 @@ header {
     display: flex;
     align-items: center; }
     header .menu li {
-      padding: 20px;
-      list-style: none; }
+      padding: 10px;
+      list-style: none;
+      transition: all .2s ease; }
       header .menu li a {
         text-decoration: none;
         font-size: 20px;
         color: white; }
+      header .menu li a:hover {
+        color: #111111; }
+    header .menu li:hover {
+      margin: 10px; }
 
 /*Banner*/
 .banner {
@@ -44,4 +49,14 @@ header {
   .banner h2,
   .banner h1,
   .banner p {
-    color: white; }
+    color: white;
+    margin-top: 20px; }
+  .banner p {
+    background-color: yellow;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer; }
+  .banner p:hover {
+    color: white;
+    background-color: yellowgreen; }
