@@ -1,3 +1,60 @@
+.nosotros .imagen_center {
+  background-image: url(../image/estudio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.719);
+  height: 70vh;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column; }
+  .nosotros .imagen_center .titulo_1 {
+    color: white;
+    margin-left: 50px; }
+  .nosotros .imagen_center .titulo_2 {
+    color: white;
+    font-size: 5vw;
+    margin-left: 50px; }
+
+.nosotros .text_1 {
+  margin: 20px 50px; }
+  .nosotros .text_1 h3 {
+    color: red;
+    margin-top: 50px; }
+  .nosotros .text_1 .text_duo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 75px; }
+    .nosotros .text_1 .text_duo p {
+      max-width: 900px; }
+  .nosotros .text_1 .titulo_3 {
+    font-size: 30px;
+    color: red;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+
+.nosotros main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .nosotros main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .nosotros main div img {
+      width: auto;
+      height: 200px;
+      border-radius: 50%; }
+    .nosotros main div p {
+      text-align: left;
+      max-width: 300px; }
+
 :root {
   --menu-color: rgb(24, 24, 24); }
 
@@ -25,7 +82,10 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100; }
   header .logo {
     color: white;
     font-size: 30px; }
@@ -41,7 +101,8 @@ header {
       text-decoration: none;
       font-size: 1.5vw;
       color: white;
-      transition: all .4s ease; }
+      transition: all .4s ease;
+      padding: 25px; }
     header .menu a:hover {
       color: #bebcbc;
       margin: 5px; }
@@ -85,7 +146,8 @@ footer {
     padding: 20px;
     color: black;
     border-radius: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .4s; }
   .banner p:hover {
     color: white;
     background-color: yellowgreen; }
@@ -148,4 +210,23 @@ footer {
     .contenido div {
       flex-direction: row; }
       .contenido div p {
-        font-size: 2.5vw; } }
+        font-size: 2.5vw; }
+  .nosotros .imagen_center {
+    height: 45vh; }
+  .nosotros main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .nosotros main div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .nosotros main div img {
+        width: auto;
+        height: 200px;
+        border-radius: 50%; }
+      .nosotros main div p {
+        text-align: left;
+        max-width: 300px; } }
