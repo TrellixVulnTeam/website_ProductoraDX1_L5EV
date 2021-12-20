@@ -50,7 +50,12 @@
     .nosotros main div img {
       width: auto;
       height: 200px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all .4s; }
+    .nosotros main div img:hover {
+      background-color: black;
+      border-radius: 10%; }
     .nosotros main div p {
       text-align: left;
       max-width: 300px; }
