@@ -1,11 +1,15 @@
 :root {
-  --menu-color: rgb(71, 71, 71); }
+  --menu-color: rgb(24, 24, 24); }
 
+/*Reset*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+html body {
+  background-color: #c5c3c3; }
 
 /*Menu*/
 header {
@@ -29,19 +33,19 @@ header {
     header .menu a {
       padding-left: 20px;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 1.5vw;
       color: white;
       transition: all .4s ease; }
     header .menu a:hover {
       color: #bebcbc;
-      margin: 10px; }
+      margin: 5px; }
   header .mostrar-menu,
   header .esconder-menu {
     color: white;
     cursor: pointer;
     transition: all .4s ease;
     display: none;
-    font-size: 40px; }
+    font-size: 30px; }
   header .mostrar-menu {
     order: 1; }
   header #check {
@@ -75,6 +79,7 @@ header {
     color: white;
     background-color: yellowgreen; }
 
+/*Contenido*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   body {
     background-color: #207e52; }
@@ -102,5 +107,6 @@ header {
     header .menu a {
       display: block;
       color: white;
-      margin-top: 30px;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      padding: 15px;
+      font-size: 2.5vw; } }

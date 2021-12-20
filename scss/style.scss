@@ -1,6 +1,10 @@
 :root{
-    --menu-color: rgb(71, 71, 71);
+    --menu-color: rgb(24, 24, 24);
 }
+
+
+/*Reset*/
+
 
 *{
     padding: 0;
@@ -8,6 +12,13 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+html{
+    body{
+        background-color: rgb(197, 195, 195);
+    }
+}
+
 
 /*Menu*/
 
@@ -36,14 +47,14 @@ header{
         a{
             padding-left: 20px;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 1.5vw;
             color: white;
             transition: all .4s ease;
         }
 
             a:hover{
                 color: rgb(190, 188, 188);
-                margin: 10px;
+                margin: 5px;
             }
     }
 
@@ -53,7 +64,7 @@ header{
         cursor: pointer;
         transition: all .4s ease;
         display: none; 
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .mostrar-menu{
@@ -101,6 +112,8 @@ header{
     }
 }
 
+/*Contenido*/
+
 @media only screen and (min-width:0px) and (max-width:767px) {
 
     body{
@@ -139,8 +152,9 @@ header{
             a{
                 display: block;
                 color: rgb(255, 255, 255);
-                margin-top: 30px;
                 text-transform: uppercase;
+                padding: 15px;
+                font-size: 2.5vw;
             }
 
         }
