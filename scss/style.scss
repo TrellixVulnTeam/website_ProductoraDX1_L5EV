@@ -16,6 +16,11 @@
 html{
     body{
         background-color: rgb(197, 195, 195);
+        min-height: 100vh;
+        position: relative;
+        margin: 0;
+        padding-bottom: 100px; //height of the footer
+        box-sizing: border-box;
     }
 }
 
@@ -43,6 +48,7 @@ header{
         padding: 10px;
         list-style: none;
         transition: all .2s ease;
+        margin-right: 0px;
         
         a{
             padding-left: 20px;
@@ -74,6 +80,12 @@ header{
     #check{
         display: none;
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
 }
 
 /*Banner*/
@@ -114,11 +126,39 @@ header{
 
 /*Contenido*/
 
-@media only screen and (min-width:0px) and (max-width:767px) {
+.contenido{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            height: 250px;
+            width: auto;
+            border-radius: 200px;
+        }
 
+        p{
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+    
     body{
         background-color: rgb(32, 126, 82);
     }
+
+    /*Header*/
+
     header{
 
         .esconder-menu,
@@ -156,6 +196,15 @@ header{
                 padding: 15px;
                 font-size: 2.5vw;
             }
+        }
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            flex-direction: row;
         }
     }
 }
